@@ -145,7 +145,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-17",
-					"loop" : [ 0, 1000 ],
+					"loop" : [ 0.0, 1000.0 ],
 					"maxclass" : "bach.roll",
 					"numinlets" : 6,
 					"numoutlets" : 8,
@@ -329,7 +329,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "list", "list" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 66.666668653488159, 597.424260914325714, 98.0, 50.0 ],
+					"patching_rect" : [ 66.666668653488159, 606.333353281021118, 98.0, 50.0 ],
 					"rows" : 3
 				}
 
@@ -461,7 +461,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 142.666668653488159, 722.333355784416199, 50.0, 22.0 ],
-					"text" : "0 2 0.3"
+					"text" : "1 1 0."
 				}
 
 			}
@@ -1223,7 +1223,7 @@
 , 			{
 				"name" : "bach.mc2f.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/bach/patchers",
-				"patcherrelativepath" : "../../Max 8/Packages/bach/patchers",
+				"patcherrelativepath" : "../../../Max 8/Packages/bach/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
