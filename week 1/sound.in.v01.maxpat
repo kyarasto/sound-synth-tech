@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 141.0, 87.0, 952.0, 724.0 ],
+		"rect" : [ 715.0, 258.0, 952.0, 724.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -183,8 +183,20 @@
 , 			{
 				"box" : 				{
 					"basictuning" : 0,
+					"clipheight" : 132.365080595016479,
 					"data" : 					{
-						"clips" : [  ]
+						"clips" : [ 							{
+								"absolutepath" : "/Users/kyarato/Documents/myClasses/sound-synth-tech/media/648437__timouse__piano-loop-21.wav",
+								"filename" : "648437__timouse__piano-loop-21.wav",
+								"filekind" : "audiofile",
+								"id" : "u402002448",
+								"loop" : 1,
+								"content_state" : 								{
+									"loop" : 1
+								}
+
+							}
+ ]
 					}
 ,
 					"followglobaltempo" : 0,
@@ -332,7 +344,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 4.756524264812469, 386.014532089233398, 103.603170335292816, 47.0 ],
+					"patching_rect" : [ 4.756524264812469, 386.014532089233398, 104.0, 47.0 ],
 					"text" : "<gain> slider that processes audio signals"
 				}
 
@@ -531,9 +543,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [  ],
-		"autosave" : 0
+ ]
 	}
 
 }
