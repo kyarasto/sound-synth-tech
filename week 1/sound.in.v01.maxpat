@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 125.0, 301.0, 952.0, 617.0 ],
+		"rect" : [ 492.0, 333.0, 952.0, 525.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -193,6 +193,17 @@
 								"loop" : 1,
 								"content_state" : 								{
 									"loop" : 1
+								}
+
+							}
+, 							{
+								"absolutepath" : "/Users/kyarato/Documents/myClasses/sound-synth-tech/media/RB.vox/RB.vox.sung.vocalizations.Db4-F4.wav",
+								"filename" : "RB.vox.sung.vocalizations.Db4-F4.wav",
+								"filekind" : "audiofile",
+								"id" : "u111006725",
+								"loop" : 0,
+								"content_state" : 								{
+
 								}
 
 							}

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 71.0, 496.0, 501.0, 449.0 ],
+		"rect" : [ 161.0, 337.0, 432.0, 552.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,23 +40,86 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-13",
+					"id" : "obj-5",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 43.0, 199.0, 109.0, 22.0 ],
-					"text" : "poly~ polyThingy 4"
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 35.0, 212.0, 101.0, 22.0 ],
+					"text" : "prepend midinote"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-10",
-					"maxclass" : "ezdac~",
-					"numinlets" : 2,
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 35.0, 311.0, 45.0, 45.0 ]
+					"patching_rect" : [ 128.0, 487.0, 68.0, 22.0 ],
+					"text" : "send~ out2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 42.0, 487.0, 68.0, 22.0 ],
+					"text" : "send~ out1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"channels" : 1,
+					"id" : "obj-2",
+					"lastchannelcount" : 0,
+					"maxclass" : "live.gain~",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "signal", "", "float", "list" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 42.0, 309.0, 48.0, 136.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "live.gain~",
+							"parameter_mmax" : 6.0,
+							"parameter_mmin" : -70.0,
+							"parameter_shortname" : "live.gain~",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
+						}
+
+					}
+,
+					"varname" : "live.gain~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 35.0, 158.0, 47.0, 22.0 ],
+					"text" : "pack f f"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 35.0, 264.0, 109.0, 22.0 ],
+					"text" : "poly~ polyThingy 4"
 				}
 
 			}
@@ -102,17 +165,31 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-10", 1 ],
-					"order" : 0,
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-13", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-10", 0 ],
+					"destination" : [ "obj-3", 0 ],
 					"order" : 1,
-					"source" : [ "obj-13", 0 ]
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"order" : 0,
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -133,21 +210,42 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-53", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
+					"destination" : [ "obj-1", 1 ],
 					"source" : [ "obj-57", 0 ]
 				}
 
 			}
  ],
+		"parameters" : 		{
+			"obj-2" : [ "live.gain~", "live.gain~", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
 		"dependency_cache" : [ 			{
 				"name" : "polyThingy.maxpat",
-				"bootpath" : "~/Documents/myClasses/personal",
+				"bootpath" : "~/Documents/myClasses/sound-synth-tech/week 6/polyAssignment",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1

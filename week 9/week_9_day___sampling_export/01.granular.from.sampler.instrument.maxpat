@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 315.0, 87.0, 1331.0, 812.0 ],
+		"rect" : [ 258.0, 94.0, 1278.0, 827.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,37 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-5",
+					"id" : "obj-8",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 139.0, 356.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 962.0, 296.0, 31.0, 22.0 ],
+					"patching_rect" : [ 138.666670262813568, 396.0, 48.0, 22.0 ],
+					"text" : "loop $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 943.25, 287.0, 31.0, 22.0 ],
+					"presentation_linecount" : 2,
 					"text" : "Db4"
 				}
 
@@ -134,20 +159,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 85.0, 345.5, 150.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"attr" : "timestretch",
-					"id" : "obj-94",
-					"maxclass" : "attrui",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 85.0, 303.5, 150.0, 22.0 ]
+					"patching_rect" : [ 85.0, 317.0, 150.0, 22.0 ]
 				}
 
 			}
@@ -1390,8 +1402,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 35.0, 228.333344000000011, 121.0, 23.0 ],
-					"text" : "groove~ mySample"
+					"patching_rect" : [ 35.0, 228.333344000000011, 212.0, 23.0 ],
+					"text" : "groove~ mySample @timestretch 1"
 				}
 
 			}
@@ -1455,7 +1467,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 18.0, 8.0, 622.0, 27.0 ],
-					"text" : "Monophonic Sampler Instrument with <kslider> and <bach.roll> Control"
+					"text" : "Granular Sampler Instrument by Setting <groove~> To Loop Mode"
 				}
 
 			}
@@ -2326,6 +2338,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-96", 0 ],
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-46", 0 ],
 					"source" : [ "obj-40", 1 ]
 				}
@@ -2342,13 +2361,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-52", 0 ],
 					"source" : [ "obj-46", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-96", 0 ],
-					"source" : [ "obj-5", 0 ]
 				}
 
 			}
@@ -2398,6 +2410,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-63", 0 ],
 					"source" : [ "obj-59", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-64", 0 ],
+					"source" : [ "obj-6", 0 ]
 				}
 
 			}
@@ -2466,7 +2485,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-64", 2 ],
-					"midpoints" : [ 499.600000000000023, 210.666687000000024, 146.5, 210.666687000000024 ],
+					"midpoints" : [ 499.600000000000023, 210.666687000000024, 237.5, 210.666687000000024 ],
 					"order" : 1,
 					"source" : [ "obj-68", 3 ]
 				}
@@ -2476,7 +2495,7 @@
 				"patchline" : 				{
 					"color" : [ 0.131302371621132, 0.99969744682312, 0.023593800142407, 1.0 ],
 					"destination" : [ "obj-64", 1 ],
-					"midpoints" : [ 405.399999999999977, 202.666687000000024, 95.5, 202.666687000000024 ],
+					"midpoints" : [ 405.399999999999977, 202.666687000000024, 141.0, 202.666687000000024 ],
 					"order" : 2,
 					"source" : [ "obj-68", 2 ]
 				}
@@ -2509,6 +2528,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-81", 0 ],
 					"source" : [ "obj-75", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-8", 0 ]
 				}
 
 			}
@@ -2552,13 +2578,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-87", 1 ],
 					"source" : [ "obj-91", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-64", 0 ],
-					"source" : [ "obj-94", 0 ]
 				}
 
 			}
