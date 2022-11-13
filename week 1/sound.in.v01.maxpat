@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 492.0, 333.0, 952.0, 525.0 ],
+		"rect" : [ 636.0, 267.0, 952.0, 525.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -183,93 +183,16 @@
 , 			{
 				"box" : 				{
 					"basictuning" : 0,
-					"clipheight" : 20.0,
+					"clipheight" : 132.365080595016479,
 					"data" : 					{
 						"clips" : [ 							{
-								"absolutepath" : "/Users/kyarato/Documents/myClasses/sound-synth-tech/media/RB.vox/RB.vox.spoken.langston.hughes.wav",
-								"filename" : "RB.vox.spoken.langston.hughes.wav",
+								"absolutepath" : "/Users/kyarato/Documents/myClasses/sound-synth-tech/media/scratch.wav",
+								"filename" : "scratch.wav",
 								"filekind" : "audiofile",
-								"id" : "u265010757",
-								"loop" : 1,
-								"content_state" : 								{
-									"loop" : 1
-								}
-
-							}
-, 							{
-								"absolutepath" : "/Users/kyarato/Documents/myClasses/sound-synth-tech/media/RB.vox/RB.vox.sung.vocalizations.Db4-F4.wav",
-								"filename" : "RB.vox.sung.vocalizations.Db4-F4.wav",
-								"filekind" : "audiofile",
-								"id" : "u111006725",
+								"id" : "u392005519",
 								"loop" : 0,
 								"content_state" : 								{
-
-								}
-
-							}
-, 							{
-								"absolutepath" : "/Users/kyarato/Documents/myClasses/sound-synth-tech/media/RB.vox/RB.vox.spoken.vowels.F#3-A#3.wav",
-								"filename" : "RB.vox.spoken.vowels.F#3-A#3.wav",
-								"filekind" : "audiofile",
-								"id" : "u220010751",
-								"loop" : 0,
-								"content_state" : 								{
-
-								}
-
-							}
-, 							{
-								"absolutepath" : "/Users/kyarato/Documents/myClasses/sound-synth-tech/media/RB.vox/RB.vox.sung.consonants.s.f.k.t.Db4.wav",
-								"filename" : "RB.vox.sung.consonants.s.f.k.t.Db4.wav",
-								"filekind" : "audiofile",
-								"id" : "u608010752",
-								"loop" : 0,
-								"content_state" : 								{
-
-								}
-
-							}
-, 							{
-								"absolutepath" : "/Users/kyarato/Documents/myClasses/sound-synth-tech/media/RB.vox/RB.vox.sung.fare.you.well.Bb.minor.wav",
-								"filename" : "RB.vox.sung.fare.you.well.Bb.minor.wav",
-								"filekind" : "audiofile",
-								"id" : "u755010753",
-								"loop" : 0,
-								"content_state" : 								{
-
-								}
-
-							}
-, 							{
-								"absolutepath" : "/Users/kyarato/Documents/myClasses/sound-synth-tech/media/RB.vox/RB.vox.sung.vocalizations.Db4-F4.wav",
-								"filename" : "RB.vox.sung.vocalizations.Db4-F4.wav",
-								"filekind" : "audiofile",
-								"id" : "u889010754",
-								"loop" : 0,
-								"content_state" : 								{
-
-								}
-
-							}
-, 							{
-								"absolutepath" : "/Users/kyarato/Documents/myClasses/sound-synth-tech/media/RB.vox/RB.vox.sung.vowels.Bb3.wav",
-								"filename" : "RB.vox.sung.vowels.Bb3.wav",
-								"filekind" : "audiofile",
-								"id" : "u138010755",
-								"loop" : 0,
-								"content_state" : 								{
-
-								}
-
-							}
-, 							{
-								"absolutepath" : "/Users/kyarato/Documents/myClasses/sound-synth-tech/media/RB.vox/RB.vox.whispered.langston.hughes.wav",
-								"filename" : "RB.vox.whispered.langston.hughes.wav",
-								"filekind" : "audiofile",
-								"id" : "u389010756",
-								"loop" : 1,
-								"content_state" : 								{
-									"loop" : 1
+									"loop" : 0
 								}
 
 							}
