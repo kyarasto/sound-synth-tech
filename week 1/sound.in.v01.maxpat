@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 636.0, 267.0, 952.0, 525.0 ],
+		"rect" : [ 694.0, 87.0, 952.0, 525.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -186,13 +186,13 @@
 					"clipheight" : 132.365080595016479,
 					"data" : 					{
 						"clips" : [ 							{
-								"absolutepath" : "/Users/kyarato/Documents/myClasses/sound-synth-tech/media/scratch.wav",
-								"filename" : "scratch.wav",
+								"absolutepath" : "/Users/kyarato/Documents/myClasses/sound-synth-tech/media/RB.vox/RB.vox.sung.fare.you.well.Bb.minor.wav",
+								"filename" : "RB.vox.sung.fare.you.well.Bb.minor.wav",
 								"filekind" : "audiofile",
-								"id" : "u392005519",
-								"loop" : 0,
+								"id" : "u403011005",
+								"loop" : 1,
 								"content_state" : 								{
-									"loop" : 0
+									"loop" : 1
 								}
 
 							}

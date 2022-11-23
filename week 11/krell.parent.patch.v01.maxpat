@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 48.0, 87.0, 1067.0, 867.0 ],
+		"rect" : [ 407.0, 87.0, 1135.0, 867.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,53 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-39",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 969.0, 473.5, 72.0, 47.0 ],
+					"text" : "use to change modulation"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-27",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 914.0, 478.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 707.0, 124.0, 244.0, 33.0 ],
+					"text" : "add sm > 1 to make notes more spread out\nadd sm < 1 to make notes less spread out"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 329.0, 13.0, 247.0, 20.0 ],
+					"text" : "change this to make notes longer or shortere"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-118",
 					"maxclass" : "newobj",
@@ -104,7 +151,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 740.375, 272.0, 213.0, 20.0 ],
-					"presentation_linecount" : 2,
 					"text" : "<= 2. bang the first event & watch it go"
 				}
 
@@ -214,7 +260,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 771.0, 382.5, 150.0, 47.0 ],
+					"patching_rect" : [ 771.0, 382.5, 153.0, 47.0 ],
 					"text" : "# of breakpoints (pairs of x and y values sent to the <function> object) "
 				}
 
@@ -454,7 +500,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 301.0, 352.0, 48.0, 20.0 ],
-					"presentation_linecount" : 2,
 					"text" : "release"
 				}
 
@@ -578,7 +623,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 463.0, 376.0, 102.0, 60.0 ],
+					"patching_rect" : [ 463.0, 376.0, 104.0, 60.0 ],
 					"text" : "remaining duration after subtracting A & R segments"
 				}
 
@@ -836,7 +881,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 273.833333333333371, 763.0, 50.0, 62.0 ],
-					"presentation_linecount" : 4,
 					"text" : "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
 				}
 
@@ -1071,7 +1115,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 193.166666666666686, 763.0, 50.0, 62.0 ],
-					"text" : "1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1"
+					"text" : "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
 				}
 
 			}
@@ -1299,6 +1343,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-29", 0 ],
 					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-98", 1 ],
+					"source" : [ "obj-27", 0 ]
 				}
 
 			}

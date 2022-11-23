@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 112.0, 153.0, 1358.0, 712.0 ],
+		"rect" : [ 313.0, 113.0, 1358.0, 712.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -272,7 +272,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1134.020833333333258, 496.0, 110.479166666666515, 22.0 ],
+					"patching_rect" : [ 1134.020833333333258, 504.0, 110.479166666666515, 22.0 ],
 					"text" : "*~ 500."
 				}
 
@@ -346,10 +346,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 171.821428571428555, 666.0, 35.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "out 2"
 				}
 
@@ -362,10 +358,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 134.821428571428555, 666.0, 35.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "out 1"
 				}
 
@@ -378,6 +370,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 79.321428571428555, 666.0, 42.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "out~ 1"
 				}
 
@@ -920,7 +916,6 @@
 			}
 , 			{
 				"box" : 				{
-					"domain" : 406.0,
 					"id" : "obj-79",
 					"maxclass" : "function",
 					"numinlets" : 1,
@@ -988,6 +983,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 11.0, 32.0, 28.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "in 1"
 				}
 
@@ -1374,50 +1373,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "bach.args.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "bach.expr.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "bach.mc2f.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/bach/patchers",
-				"patcherrelativepath" : "../../../../Max 8/Packages/bach/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "bach.portal.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "z.CMC-logo300dpi.2x.gif",
-				"bootpath" : "~/Documents/myClasses/sound-synth-tech/week 11/spat_boiler_patches_export",
-				"patcherrelativepath" : ".",
-				"type" : "GIFf",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "z.by-sa.2x.png",
-				"bootpath" : "~/Documents/myClasses/sound-synth-tech/week 11/spat_boiler_patches_export",
-				"patcherrelativepath" : ".",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "z.credits.v01.bp.maxpat",
-				"bootpath" : "~/Documents/myClasses/sound-synth-tech/week 11/spat_boiler_patches_export",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0,
-		"patchlinecolor" : [ 0.701961, 0.701961, 0.701961, 1.0 ]
+ ]
 	}
 
 }

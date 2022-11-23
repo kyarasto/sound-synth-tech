@@ -591,8 +591,7 @@
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"numoutlets" : 0,
 					"patching_rect" : [ 600.5, 163.0, 103.0, 22.0 ],
 					"text" : "SDIF-buffer kyara"
 				}
@@ -870,10 +869,6 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "SDIF-buffer.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "SDIF-tuples.mxo",
 				"type" : "iLaX"
 			}
